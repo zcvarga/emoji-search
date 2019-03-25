@@ -1,12 +1,29 @@
-import React from 'react';
+import React, { Component } from 'react';
+import EmojiList from './components/EmojiList';
+import './App.css';
 
-class App extends React.Component {
-    render () {
+class App extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            searchLine: ''
+        }
+    }
+
+    changeSearchLine(text) {
+        this.setState({
+            searchLine: text
+        });
+    }
+
+    render() {
         return (
             <div>
-                App
+                <p className="App-header"> 😄 Emoji Search 😲</p>
+                <input type="text" onChange={(e) => this.changeSearchLine(e.target.value)}></input>
+                <EmojiList searchLine={this.state.searchLine} />
             </div>
-        );
+        )
     }
 }
 
