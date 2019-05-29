@@ -1,5 +1,5 @@
 # Emoji Search :innocent: 
-Mini app that renders a list of emojis and allows you to search and filter by name and keywords.
+Mini app I created while learning *React*. It renders a list of emojis and allows you to search and filter by name and keywords.
 
 ## Getting Started
 ### Clone repository
