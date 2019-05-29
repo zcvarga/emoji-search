@@ -3,6 +3,7 @@ Mini app that renders a list of emojis and allows you to search and filter by na
 
 ## Getting Started
 `git clone https://github.com/zcvarga/emoji-search 
+ 
  cd emoji-search `
 
 
